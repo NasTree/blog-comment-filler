@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>博客信息一键填充</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      width: 280px;
+      margin: 0;
+      padding: 16px;
+      font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+      color: #333;
+    }
+    h1 {
+      margin: 0 0 4px;
+      font-size: 16px;
+      text-align: center;
+    }
+    p {
+      margin: 0 0 12px;
+      font-size: 12px;
+      color: #888;
+      text-align: center;
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 13px;
+    }
+    input {
+      display: block;
+      width: 100%;
+      margin-top: 4px;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 13px;
+      outline: none;
+    }
+    input:focus { border-color: #FFBD2E; }
+    button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      background: #FFBD2E;
+      color: #333;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover { background: #FFC94D; }
+    #status {
+      margin-top: 10px;
+      font-size: 12px;
+      color: #888;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>博客信息一键填充</h1>
+  <p>填一次，评论时点一下就自动填好。</p>
+  <label>昵称
+    <input id="nickname" type="text" placeholder="昵称">
+  </label>
+  <label>邮箱
+    <input id="email" type="email" placeholder="邮箱">
+  </label>
+  <label>网址
+    <input id="url" type="url" placeholder="网址">
+  </label>
+  <button id="save">保存</button>
+  <div id="status"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
